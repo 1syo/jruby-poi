@@ -16,48 +16,7 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.markdown"
   ]
-  s.files = [
-    ".travis.yml",
-    "Gemfile",
-    "Gemfile.lock",
-    "LICENSE",
-    "NOTICE",
-    "README.markdown",
-    "Rakefile",
-    "VERSION",
-    "jruby-poi.gemspec",
-    "lib/ooxml-lib/dom4j-1.6.1.jar",
-    "lib/ooxml-lib/stax-api-1.0.1.jar",
-    "lib/ooxml-lib/xmlbeans-2.3.0.jar",
-    "lib/poi-3.8-20120326.jar",
-    "lib/poi-examples-3.8-20120326.jar",
-    "lib/poi-excelant-3.8-20120326.jar",
-    "lib/poi-ooxml-3.8-20120326.jar",
-    "lib/poi-ooxml-schemas-3.8-20120326.jar",
-    "lib/poi-scratchpad-3.8-20120326.jar",
-    "lib/poi.rb",
-    "lib/poi/workbook.rb",
-    "lib/poi/workbook/area.rb",
-    "lib/poi/workbook/cell.rb",
-    "lib/poi/workbook/named_range.rb",
-    "lib/poi/workbook/row.rb",
-    "lib/poi/workbook/workbook.rb",
-    "lib/poi/workbook/worksheet.rb",
-    "spec/data/simple_with_picture.ods",
-    "spec/data/simple_with_picture.xls",
-    "spec/data/spreadsheet.ods",
-    "spec/data/timesheet.xlsx",
-    "spec/data/various_samples.xlsx",
-    "spec/facade_spec.rb",
-    "spec/io_spec.rb",
-    "spec/spec_helper.rb",
-    "spec/support/java/jrubypoi/MockOutputStream.java",
-    "spec/support/java/support.jar",
-    "spec/support/matchers/cell_matcher.rb",
-    "spec/workbook_spec.rb",
-    "spec/writing_spec.rb",
-    "spec_debug.sh"
-  ]
+  s.files = `git ls-files`.split($/)
   s.homepage = "http://github.com/kameeoze/jruby-poi"
   s.licenses = ["Apache"]
   s.require_paths = ["lib"]
