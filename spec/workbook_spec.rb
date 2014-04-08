@@ -42,7 +42,7 @@ describe POI::Workbook do
     book.poi_workbook.should be_kind_of(org.apache.poi.xssf.usermodel.XSSFWorkbook)
   end
 
-  it "should return a column of cells by reference" do
+  xit "should return a column of cells by reference" do
     book = POI::Workbook.open(VARIOUS_SAMPLES_PATH)
     book["numbers!$A"].should == book['numbers'].rows.collect{|e| e[0].value}
     book["numbers!A"].should == book['numbers'].rows.collect{|e| e[0].value}
